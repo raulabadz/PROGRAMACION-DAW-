@@ -33,18 +33,20 @@
 
         <h2> Mis pedidos</h2>
 
-        <table border="1">
+        <table border="1"> <!-- Esto es para que las tablas tengan su borde-->
 
             <thead>
                 <tr>
-                    <th>N de pedido</th>
+                    <th>N de pedido</th> <!-- Celda de encabezados-->
                     <th>Fecha</th>
                     <th>Importe</th>
                     <th>Fecha</th>
-                    <th>Ver detalles</th>
+                    <th>Ver detalles</th> <!-- Si quiero que se fuisonen dos columnsas, th colspan=2-->
                 </tr>
 
             </thead>
+
+            <!-- Cuerpo de la tabla -->
             <tbody>
                 <tr>
                     <td>#012</td>
@@ -82,31 +84,187 @@
     <p></p>
     <p></p>
 
+    <!-- Sección de contacto-->
+
     <section id="contacto">
+
+        <!-- Inicio formulario-->
 
         <form>
 
-            <label>Nombre:</label>
-            <input type="text" placeholder="Escribe aquí tu nombre">
+            <fieldset> <!-- Como un marquito que enrolla todo ese beta-->
+                <legend> Datos básicos</legend> <!-- Título del marquito-->
+
+            <label>Nombre:
+            <input type="text" placeholder="Escribe aquí tu nombre" required> <!-- EL required significa relleno obligatorio-->
+            </label>
+            <!-- Es recomendable poner el fin de etiqueta aquí, con tal de que si le damos a la cosa de Nombre ya entra directamente al input-->
             <p></p>
             <p></p>
             <p></p>
-            <label>Edad:</label>
-            <input type="number" placeholder="Escribe aquí tu edad">
+            <label>Edad:
+            <input type="number" placeholder="Escribe aquí tu edad"> <!-- Se puede poner además, un max="", o un min="" para máximos o mínimos, y además un step="" que es cuanto sube en unidad esa edad.-->
+            </label>
             <p></p>
             <p></p>
             <p></p>
-            <label>Fecha nacimiento:</label>
+            <label>Fecha nacimiento:
             <input type="date" placeholder="Escribe aquí tu fecha">
+            </label>
             <p></p>
             <p></p>
             <p></p>
-            <label>Email:</label>
+            <label>Email:
             <input type="email" placeholder="Escribe aquí tu email">
+            </label>
             <p></p>
             <p></p>
             <p></p>
-            <button type="submit" Enviar></button>
+            <label>Teléfono:
+            <input type="tel" placeholder="Escribe aquí tu teléfono"> <!-- Si entras con un móvil y pinchas, te abrirá el teclado númerico-->
+            </label>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha, hora y números</legend>
+
+                <label>Hora preferida:
+            <input type="time"> 
+            <p></p>
+            
+             <label>Cita, (fecha y hora):
+            <input type="datetime-local"> <!--Datetime a secas no va a dejar utilizar algunos navegadores, el datetime-local SI debemos utilizarlo-->
+            </label>            
+            <p></p>  
+
+             <label>Mes:
+            <input type="month"> 
+            <p></p>
+
+             <label>Semana:
+            <input type="week"> 
+            <p></p>
+
+             <label>Prioridad (0 - 100):
+            <input id="valorRango" type="range" min="0" max="1000" value="500" oninput="document.getElementById ('nRango').value=this.value"> <!-- Value es el valor por defecto por el cual queremos que aparezca la barrita-->
+            <output id="nRango">500</output>
+            <p></p>
+
+             <label>Color:
+            <input type="color"> 
+            <p></p>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Selectores</legend>
+
+                <fieldset>
+                    <legend>Tipo de pepino</legend>
+
+                    <input type="radio" name="tipoPepino" value="moreno">
+                    <label>Pepino Moreno</label>
+
+                    <input type="radio" name="tipoPepino" value="rubio">
+                    <label>Pepino Rubio</label>
+
+                    <input type="radio" name="tipoPepino" value="albino">
+                    <label>Pepino Albino</label>
+
+
+                </fieldset>
+
+
+            </fieldset>
+
+            <fieldset>
+        <legend>Extras</legend>
+
+        <input id="ext_ketchup" type="checkbox" name="extras" value="ketchup">
+        <label for="ext_ketchup">Ketchup</label>
+        <p></p>
+
+        <input id="ext_costilleta" type="checkbox" name="extras" value="costilleta">
+        <label for="ext_costilleta">Costilleta</label>
+        <p></p>
+
+        <input id="ext_nocilla" type="checkbox" name="extras" value="nocilla">
+        <label for="ext_nocilla">Nocilla</label>
+        <p></p>
+        <!--
+          Checkboxes permiten selección múltiple. Con el mismo name, el servidor recibirá varias claves con ese name.
+          En algunos backends conviene usar name="extras[]" para recibir un array.
+        -->
+      </fieldset>
+
+      <label for="s-variedad">Variedad</label>
+      <select id="s-variedad" name="s-variedad">
+        <!-- <select>: lista desplegable. -->
+        <option value="sinOpcion">------</option>
+        <optgroup label="Clásicos">
+          <option value="Holandés">Holandés</option>
+          <option value="Espanol">Español</option>
+        </optgroup>
+        <optgroup label="Modernos">
+          <option value="Pelao">Pelao</option>
+        </optgroup>
+      </select>
+
+      <p></p>
+
+      <label>Lote (elige varios)</label>
+      <select name="lotes[]" multiple size="4">
+        <option value="lote-a"> LOTE A</option>
+        <option value="lote-b"> LOTE B</option>
+        <option value="lote-c"> LOTE C</option>
+        <option value="lote-d"> LOTE D</option>
+        <option value="lote-e"> LOTE E</option>
+        <option value="lote-f"> LOTE F</option>
+
+      </select>
+
+      <p></p>
+      <p></p>
+
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Textos y archivos</legend>
+
+        <label>Observaciones:</label>
+        <textarea id="textarea1" rows="4" cols="40"></textarea>
+
+        <p></p>
+        <p></p>
+
+        <label>Adjutar factura(s)</label>
+        <input id="facturas" type="file" accept=".pdf, .jpg" multiple> <!-- Aqui se guarda la ruta del archivo. Además, con accept, se puede hacer un filtro para elegir solo los archivos que queramos en el servidor, y con multiple cuantos archivos aceptamos--> 
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Progreso</legend>
+
+        <label>Progreso de la carga</label>
+        <progress value="70"max="100"></progress>
+
+
+    </fieldset>
+
+    <p></p>
+
+            <button type="submit">Enviar</button> <!-- Botón para enviar formulario-->
+            <p></p>
+            <button type="reset">Limpiar formulario</button>
 
         </form>
 

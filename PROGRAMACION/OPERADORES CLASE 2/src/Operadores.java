@@ -164,4 +164,95 @@ public class Operadores {
         lectorTeclado.close();//todo flujo de datos debería cerrarlo con esto. Así se quedan guardados los datos. Es como cerrar un fichero.
 
     }
+
+    public void cambiosTipo(){
+        /*
+        CLASE 23-10 min 20.
+
+        CASTEO: Cambiar un tipo de dato momentaneamente. Solo se puede aplicar a tipos que entran
+        dentro de otros. Cuando el destino está incluido en el origen. Por ejemplo lo de la división.
+
+        int -> double. 7 -> 7.0. Yo tengo un número entero y lo quiero expresar como double.
+        Puedo hacerlo porque el entero entra de forma natural dentro del double.
+
+        double -> int 7.5 -> 7
+        char -> int A-> 75. Un char se puede pasar a int y viceversa.
+        double division = (double)6/7
+
+        Ejemplo: tengo int numero = 7.
+        sout ((double) numero). La variable sigue siendo un int, pero temporalmente pasa a un double.
+
+        PARSEO: Cambio de tipo de dato MOMENTANEAMENTE. Tanto si el origen está incluido en el destino como si no. ME LA JUEGO PORQUE PUEDE QUE DE FALLO.
+        String -> int. Solo se puede hacer en determinadas ocasiones.
+
+        Aqui es donde entran las clases envolventes, que es la variable compleja asociada a la primitiva.
+        Como char --> Charger. Y así con las otras.
+
+        TODO el coger una variable y accederla a una clase más compleja y accesible, se llama Autoboxing.
+        Es decir, int numero = 20;
+                  Integer numero = 20; --> aquí se está haciendo autoboxing.
+
+        TODO. Por el contrario, coger una clase envolvente o variable compleja, y hacerla otra vez primitiva. Se le llama Unboxing.
+        Es decir, Integer numero1 = 20;
+                  int numeroBase = numero1; --> Aquí ya hemos cambiado la variable, que antes era Integer, y ahora es int, primitiva de nuevo.
+
+        //aqui se ve como cambiamos tipos de datos. Puede ser momentaneamente. Lo de ASCII es como un modelo que cada letra significa un número. Por eso en char se puede.
+
+        Estos parseos solo pueden ser.
+
+        String-> int
+        String-> char
+        String-> float
+        String-> boolean
+
+        En el caso contrario, todos si podrá pasarlos porque sería simplemente:
+
+        int -> String 7 -> "7"
+        char -> String 8.90 -> "8.90"
+        boolean -> String true -> "true"
+
+        En este caso contrario sería:
+        TODO String.valueOf(int); Aquí se pasa de un int a un String.
+
+
+        Y se pone la clase envolvente a la que se quiere pasar. De esta manera:
+        TODO Integer.parseInt(string) -> esto en caso porque se pasa de un String a un int
+        si fuese de un String a un char. Sería Charger.parseChar;
+         */
+
+       // int letraASCII = 75;
+        //System.out.println((char) letraASCII);
+
+        //char letra = 'W';
+        //System.out.println((int) letra);
+
+        //String palabra = "Hola";
+        //System.out.println(Integer.parseInt(palabra)); En este caso no dejará. Pero si es un número si deja. Ya que un número si es un int.
+
+        //Si queremos pasar de un String a un double, ese String debe ser decimal, de String a un número ese String debe ser un número. Y así con todos.
+
+        // String palabra = "7";
+        //System.out.println(Integer.parseInt(palabra)+10); //Incluso si pones +10 lo suma directamente.
+
+        //En este caso de abajo del boolean,pasará a true solo si la palabra String es true, y a false, si la palabra String es false, o si no lo puede pasar a boolean también pondrá false.
+
+        //String palabra = "Si";
+        //System.out.println(Boolean.parseBoolean(palabra)); En este caso pondrá false. porque al ser la palabra String un si, y no puede pasarla, pone un false.
+
+        //String palabra = "True";
+        //System.out.println(Boolean.parseBoolean(palabra));Aqui pondrá true. Porque si puede.
+
+        //int numero = 123;
+        //System.out.println(String.valueOf(123)+1); Aqui pondria en consola 1231 porque el 123 se convierte en String y se le concatena la palabra 1.
+
+
+
+
+
+
+
+
+
+
+    }
 }

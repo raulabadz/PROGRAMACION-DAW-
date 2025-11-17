@@ -1,0 +1,34 @@
+src CLASE MPO 24-10-25
+Codigo_fuente -> clases (minimo 1 -> donde tenemos el metodo principal main). La creacion de clases depende de las necesidades. 
+Main -> principal con el metodo main.
+
+Modelos -- MODEL -> clases que representan todos los "futuros" objetos/variables. Si yo quiero definir un coche, tendré una clase que se llame coche, son como las instrucciones que luego la representarán. Si yo quiero 20 coches, haré una clase que hará como modelo para todos esos coches. 
+
+Controladoras--CONTROLLER -> clases que permiten gestionar la logica de la app. Como cuando tenemos la clase main donde llamamos a los metodos de otra clase donde están las operaciones. 
+
+dentro de src, SOLO deberíamos tener una clase, la clase Main en MAYUSCULAS. 
+
+ConexionesBase datos -> database -> clases de configuración de la base de datos. 
+
+Recursos -> resources -> todos los recursos que quiero acceder desde la app.
+
+TODO LO QUE ES model, controller, database etc. Son nombres para paquetes ya predefinidos a lo que van a hacer, es decir, si quiero organizar mis clases en paquetes, y no tenerlas todas en src, pues hago paquetes orientados a los nombres de las clases que ejecutarán. 
+
+TODO ESTO, a su vez, entra dentro de la lógica 
+
+MVC -> que es un patron de programación que dice que:
+    M -> modelos: aqui vas a meter los objetos, o elementos que sustentan la aplicación.
+    V -> vistas: lo que se ve por consola, lo que ve el usuario. 
+    C -> controladores: la lógica de programación. 
+
+Generalmente, los metodos, pertenecen a la instancia del objeto, es decir, a la clase de ese tipo. Por tanto si tengo: 
+
+public class GestorDocumentos {
+	
+	public void imprimirFactura (){ --> este imprimirFactura, pertenece a la instancia/variable del objeto, o variable de este tipo. 
+
+	}
+}
+
+Estos casos que no son generales, son los static void. Los cuales no pertenecen a la instancia del objeto, sino a la clase entera, y se pueden acceder a ellos directamente. Algo que es peligroso, porque dos variables que son difentes, pueden ser compartidas al simplemente hecho de ser estáticas, esto ya que pertenecen a las clases de manera general. 
+

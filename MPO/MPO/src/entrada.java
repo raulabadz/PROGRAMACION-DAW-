@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class entrada {
 
     public static void main(String[] args) {
@@ -11,6 +13,15 @@ public class entrada {
         // Operaciones.restar(10,5);
         Operaciones operacionesmates = new Operaciones(); // Así se llama a un método que está en otra clase.
                 operacionesmates.sumar(5,9);
+                operacionesmates.multiplicacion(5,6); // esto es lo mismo que tener 30.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el número que quieres validar");
+        int numeroUsuario = scanner.nextInt();
+        System.out.println("El numero es valido "+operacionesmates.validarNumero(10)); //Aqui estamos retornando la variable que contenía los datos que nos interesaban.
+
+
+
+
 
 
 
@@ -25,4 +36,5 @@ public class entrada {
         System.out.println("Aquí me despido");
         System.out.println("Hasta luego");
     }
+
 }

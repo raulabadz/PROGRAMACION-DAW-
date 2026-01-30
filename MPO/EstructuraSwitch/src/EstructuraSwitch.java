@@ -82,6 +82,38 @@ public class EstructuraSwitch {
         }
     }
 
+    public void claseMPOEnum(){
+        /*
+        Se pueden usar int, char y String en los casos Switch.
+        También están los enum que son tipo de dato
+        que guarda valores fijos que no pueden verse alterados.
+         */
+        enum DiasSemana {Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo}//El enum sirve como almacenamiento de datos, sin ALTERARSE.
+        enum mesesAnio {Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre}
+        DiasSemana dia = DiasSemana.Lunes; //se define asi ya que entra por el lunes, aún no ha explicado como coger todos en general, y creo que eso es Arrays.
+
+        switch (dia){
+            case Lunes, Martes, Miercoles, Jueves-> {
+                System.out.println("Dia laborable");
+
+            }
+            case Viernes -> {
+                System.out.println("Dia laborable, casi lo tenemos");
+            }
+            case Sabado -> {
+                System.out.println("Dia descanso");
+            }
+            case Domingo -> {
+                System.out.println("Dia descanso");
+            }
+        }
+        //quiero imprimir fecha de la clase jeje
+        System.out.println("Hoy es 7 de "+mesesAnio.Noviembre +" y es "+DiasSemana.Viernes);//demostracion de como se hace con enums.
+        System.out.printf("Hoy es %d/%s/%d y es %s",7,mesesAnio.Noviembre.name(),2025,DiasSemana.Viernes.name());//así sería formateado
+
+        //TODO mirar switch que falta en diario de clases del telefono.
+    }
+
     public void menuOpciones (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Por favor selecciona la opción a realizar");

@@ -141,20 +141,20 @@
             </label>            
             <p></p>  
 
-             <label>Mes:
+             <label>Mes: </label>
             <input type="month"> 
             <p></p>
 
-             <label>Semana:
+             <label>Semana: </label>
             <input type="week"> 
             <p></p>
 
-             <label>Prioridad (0 - 100):
+             <label>Prioridad (0 - 100): </label>
             <input id="valorRango" type="range" min="0" max="1000" value="500" oninput="document.getElementById ('nRango').value=this.value"> <!-- Value es el valor por defecto por el cual queremos que aparezca la barrita-->
             <output id="nRango">500</output>
             <p></p>
 
-             <label>Color:
+             <label>Color: </label>
             <input type="color"> 
             <p></p>
 
@@ -166,9 +166,9 @@
                 <legend>Selectores</legend>
 
                 <fieldset>
-                    <legend>Tipo de pepino</legend>
+                    <legend>Tipo de pepino</legend> <!-- Se supone que de por si, el type radio la naturaleza es solo poder seleccionar uno.-->
 
-                    <input type="radio" name="tipoPepino" value="moreno">
+                    <input type="radio" name="tipoPepino" value="moreno"> <!--Si ponemos checked despues de moreno, aparece marcado automaticamente-->
                     <label>Pepino Moreno</label>
 
                     <input type="radio" name="tipoPepino" value="rubio">
@@ -184,7 +184,7 @@
             </fieldset>
 
             <fieldset>
-        <legend>Extras</legend>
+        <legend>Extras</legend> <!-- La naturaleza del checkbox es elegir uno o varios.-->
 
         <input id="ext_ketchup" type="checkbox" name="extras" value="ketchup">
         <label for="ext_ketchup">Ketchup</label>
@@ -204,9 +204,9 @@
       </fieldset>
 
       <label for="s-variedad">Variedad</label>
-      <select id="s-variedad" name="s-variedad">
+      <select id="s-variedad" name="s-variedad"> <!--Aqui se puede poner un size=2, que significa que fuerza la barra movil de manera que el resto de elementos estén ocultos y se tenga que mover esta barra.-->
         <!-- <select>: lista desplegable. -->
-        <option value="sinOpcion">------</option>
+        <option value="sinOpcion">------</option> <!--Esto se hace que de manera, este preseleccionada esta, y asi evitar errores para el usuario. Esto se hace selected también para que quede seleccionada ya de por si, igual que checked arriba.-->
         <optgroup label="Clásicos">
           <option value="Holandés">Holandés</option>
           <option value="Espanol">Español</option>
@@ -247,7 +247,7 @@
 
         <label>Adjutar factura(s)</label>
         <input id="facturas" type="file" accept=".pdf, .jpg" multiple> <!-- Aqui se guarda la ruta del archivo. Además, con accept, se puede hacer un filtro para elegir solo los archivos que queramos en el servidor, y con multiple cuantos archivos aceptamos--> 
-
+        <!-- se hace mediante accept=.jpg, .png, sin embargo, esto realmente no hace que no se puedan enviar, sino que hace como un primer filtro en el explorador de archivos.-->
 
     </fieldset>
 

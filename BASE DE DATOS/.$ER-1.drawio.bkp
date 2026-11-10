@@ -1,0 +1,73 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="DYw9lIBreGwvBZMQB9J9">
+    <mxGraphModel dx="1869" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3IPwer48IepLiZRnz9AT-1" value="Vehiculo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-2" value="ID" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-3" value="Modelo&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="60" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-4" value="Matricula" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="60" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-5" value="estado actual" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="309" y="50" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-6" value="id_vehiculo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="379" y="30" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-7" value="Clientes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="-180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-8" value="id_cliente" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="-110" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-9" value="datos personales" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="-90" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-10" value="tarjeta de pago" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="-80" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-11" value="alquilan" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-70" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-12" value="ruta recorrida" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="-20" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-13" value="inicio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="30" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-14" value="fin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="30" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-15" value="importe total" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-16" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-90" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-17" value="estación de carga" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="-160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-18" value="registran" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="-200" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-19" value="revisiones tecnicas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-20" value="realizan" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="-270" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3IPwer48IepLiZRnz9AT-21" value="empleados" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
